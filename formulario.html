@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Pedido - TiendaTech</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h2>Formulario de Pedido - TiendaTech</h2>
+  <form action="#" method="post">
+
+    <!-- Nombre -->
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+    <br><br>
+
+    <!-- Correo -->
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com">
+    <br><br>
+
+    <!-- Teléfono -->
+    <label for="telefono">Número de contacto:</label>
+    <input type="tel" id="telefono" name="telefono" placeholder="987654321">
+    <br><br>
+
+    <!-- Producto -->
+    <label for="producto">Selecciona el producto:</label>
+    <select id="producto" name="producto">
+      <option value="laptop">Laptop</option>
+      <option value="pc">PC de Escritorio</option>
+      <option value="repuesto">Repuesto</option>
+      <option value="accesorio">Accesorio</option>
+    </select>
+    <br><br>
+
+    <!-- Cantidad -->
+    <label for="cantidad">Cantidad:</label>
+    <input type="number" id="cantidad" name="cantidad" min="1" max="100" value="1">
+    <br><br>
+
+    <!-- Método de pago -->
+    <label>Método de pago:</label><br>
+    <input type="radio" name="pago" value="efectivo"> Efectivo<br>
+    <input type="radio" name="pago" value="tarjeta"> Tarjeta<br>
+    <input type="radio" name="pago" value="transferencia"> Transferencia<br>
+    <input type="radio" name="pago" value="Yape"> Yape<br>
+    <br>
+
+    <!-- Comentario -->
+    <label for="mensaje">Detalles adicionales:</label><br>
+    <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Especifica el modelo, color u otra información"></textarea>
+    <br><br>
+
+    <!-- Botón -->
+    <input type="submit" value="Enviar Pedido">
+
+  </form>
+
+</body>
+</html>
